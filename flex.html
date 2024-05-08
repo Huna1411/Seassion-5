@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 1000px;
+            height: 500px;
+            background-color: rgb(220, 179, 129);
+            display: flex;
+             /*
+                flex-direction : dùng để điều chỉnh trục của element
+            */
+            flex-direction: row;
+            gap: 5px;
+            
+            /* 
+            flex-direction: row: trục main-axis nằm ngang- cross-axis nằm dọc
+            flex-derection: colum: thì main-axis nằm dọc còn cross nằm ngang
+            */
+            /*
+            Main-axis ăn theo thuộc tính: justify-content
+            justify-content: 
+            center : ra giữa
+            space-around : 
+            space-evenly : 
+            space-between : 
+
+            cross-axis ăn theo thuộc tính: align-item
+            center : ra giữa
+            */
+        }
+        .container .item{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            flex: 1;
+        }
+        
+    </style>
+</head>
+<body>
+    <!--
+        flex dùng để định dạng layout
+        - khi 1 element có thuộc tính display: flex thì
+        sẽ dùng các thuộc tính của flex :
+        cha: gọi là flex container
+        con: gọi là flex item
+        khi Cha có thuộc tính display flex thì con sẽ nằm trên
+        cùng 1 hàng
+
+    -->
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+</body>
+</html>
